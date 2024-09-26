@@ -1,18 +1,18 @@
 document.getElementById("home").addEventListener("click", function(){
 
-    window.location.href="/public/home/home.html";
+    window.location.href="/home/home.html";
     
 });
 
 document.getElementById("cart").addEventListener("click", function(){
 
-    window.location.href="/public/cart/cart.html";
+    window.location.href="/cart/cart.html";
 
 });
 
 document.getElementById("about").addEventListener("click", function(){
 
-    window.location.href="/public/about/about.html";
+    window.location.href="/about/about.html";
 
 });
     

@@ -71,18 +71,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.getElementById("lab-test").addEventListener("click", function(){
 
-    window.location.href="test.html";
+    window.location.href="/test/test.html";
 
 });
 
 document.getElementById("home").addEventListener("click", function(){
 
-    window.location.href="home.html";
+    window.location.href="/home/home.html";
 
 });
 
 document.getElementById("about").addEventListener("click", function(){
 
-    window.location.href="about.html";
+    window.location.href="/about/about.html";
 
 });

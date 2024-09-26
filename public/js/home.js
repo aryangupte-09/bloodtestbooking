@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("more-info").addEventListener("click", function() {
-      window.location.href = "/public/about/about.html";
+      window.location.href = "/about/about.html";
   });
 });
 
@@ -30,5 +30,5 @@ document.addEventListener("DOMContentLoaded", function() {
 // });
 
 document.getElementById("more-labtest").addEventListener("click", function(){
-  window.location.href = "/public/test/test.html";
+  window.location.href = "/test/test.html";
 });
