@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+#indiviual-bloodtest, #grouped-bloodtest{
+    font-size: 1.5rem;
+}
+
+.navbar {
+    background-color: #1f2120;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end; /* Aligns buttons to the left */
+}
+
+.navbar-buttons {
+    display: flex; /* Ensure buttons are in a row */
+}
+
+.navbar-buttons button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 10px; /* Adds space between buttons */
+}
+
+.navbar-buttons button:hover {
+    background-color: #777;
+}
+
+
+#lab-tests {
+    margin: 20px;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#lab-tests h2, #lab-tests h3 {
+    text-align: center;
+    color: #333;
+}
+
+.test-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.test-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.test-card:hover {
+    transform: scale(1.05);
+}
+
+.test-card h3 {
+    color: #1f2120;
+}
+
+.price {
+    font-size: 1.2em;
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: gray;
+    margin-left: 5px;
+}
+
+.test-button {
+    background-color: #1f2120;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.test-button:hover {
+    background-color: #555;
+}
+
+.footer-container {
+    text-align: center;
+    padding: 15px;
+    background-color: #1f2120;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

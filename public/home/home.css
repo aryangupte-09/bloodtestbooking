@@ -1,0 +1,244 @@
+body {
+    background-image: url("/public/img/home/background\ image-home.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0px;
+    padding: 20px;
+}
+
+.heading {
+    font-family: 'Times New Roman', Times, serif;
+    color: #d32f2f;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+
+.flip-card-container {
+    display: flex;
+    /* justify-content: center;
+    align-items: flex-start; */
+    margin-left: 5%;
+    margin-top: 100px;
+}
+
+/* About */
+.flip-card-about {
+    background-color: transparent;
+    width: 350px;
+    height: 200px;
+    perspective: 1000px;
+    margin: 0 20px;
+}
+
+.flip-card-about-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1.0s;
+    transform-style: preserve-3d;
+}
+
+.flip-card-about:hover .flip-card-about-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-about-front, .flip-card-about-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flip-card-about-front {
+    background-color: white;
+}
+
+.flip-card-about-back {
+    background-color: #d32f2f;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+#more-info {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+    color: #d32f2f;
+    transition: background-color 0.3s;
+}
+
+#more-info:hover {
+    background-color: #e0e0e0;
+}
+
+/* Lab Tests */
+.flip-card-labtest {
+    background-color: transparent;
+    width: 350px;
+    height: 200px;
+    perspective: 1000px;
+    margin-left: 5%;
+}
+
+.flip-card-labtest-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1.0s;
+    transform-style: preserve-3d;
+}
+
+.flip-card-labtest:hover .flip-card-labtest-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-labtest-front, .flip-card-labtest-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flip-card-labtest-front {
+    background-color: white;
+}
+
+.flip-card-labtest-back {
+    background-color: #d32f2f;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+#more-labtest {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+    color: #d32f2f;
+    transition: background-color 0.3s;
+}
+
+#more-labtest:hover {
+    background-color: #e0e0e0;
+}
+
+/* Book Test */
+.flip-card-booktest {
+    background-color: transparent;
+    width: 350px;
+    height: 200px;
+    margin-left: 7%;
+    perspective: 1000px;
+
+}
+
+.flip-card-booktest-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1.0s;
+    transform-style: preserve-3d;
+}
+
+.flip-card-booktest:hover .flip-card-booktest-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-booktest-front, .flip-card-booktest-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flip-card-booktest-front {
+    background-color: white;
+}
+
+.flip-card-booktest-back {
+    background-color: #d32f2f;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+#more-booktest {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+    color: #d32f2f;
+    transition: background-color 0.3s;
+}
+
+#more-booktest:hover {
+    background-color: #e0e0e0;
+}
+
+footer {
+    background-color: #1f2120;
+    opacity: 45%;
+    color: white;
+    text-align: center;
+    position: fixed; /* Fixed position to stick to the bottom */
+    bottom: 0;
+    margin: 0px;
+    width: 100%;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.footer-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
