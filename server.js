@@ -74,6 +74,11 @@ app.get('/register.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'public/register/register.html')); // Serve the register.html file
 });
 
+app.get('/register.html', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public/login/login.html')); // Serve the register.html file
+});
+
+
 // Serve login.html file
 app.get('/login.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'public/login/login.html')); // Serve the login.html file
