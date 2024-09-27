@@ -1,4 +1,4 @@
-// Typing Feature
+// Typing Feature for the heading text
 const headingText = "Welcome To RedCell Laboratories";
 const typingSpeed = 100; 
 const headingElement = document.querySelector("header h1"); 
@@ -13,22 +13,31 @@ function typeWriter() {
     }
 }
 
-// Start the typing effect when the DOM is fully loaded
 document.addEventListener("DOMContentLoaded", function() {
     headingElement.innerHTML = ""; // Clear the heading initially
-    typeWriter(); // Call the typing function
-});
-document.addEventListener("DOMContentLoaded", function() {
-  document.getElementById("more-info").addEventListener("click", function() {
-      window.location.href = "/about/about.html";
-  });
-});
+    typeWriter(); // Start typing effect
 
-// // Add event listener for the "more-info" button
-// document.getElementById("more-info").addEventListener("click", function() {
-//   window.location.href = "/public/about"; // Redirect to the about page
-// });
+    // Redirect buttons in cards
+    document.getElementById("more-info").addEventListener("click", function() {
+        window.location.href = "/about/about.html";
+    });
 
-document.getElementById("more-labtest").addEventListener("click", function(){
-  window.location.href = "/test/test.html";
+    document.getElementById("more-labtest").addEventListener("click", function() {
+        window.location.href = "/test/test.html";
+    });
+
+    document.getElementById("more-booktest").addEventListener("click", function() {
+        window.location.href = "/booking/booking.html";
+    });
+
+    // Smooth scroll to the "Contact Us" section (if implemented)
+    const contactLink = document.querySelector('a[href="#contact"]');
+    const contactSection = document.getElementById("contact-us");
+
+    if (contactLink && contactSection) {
+        contactLink.addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent the default link behavior
+            contactSection.scrollIntoView({ behavior: "smooth" }); // Smooth scroll to Contact section
+        });
+    }
 });
