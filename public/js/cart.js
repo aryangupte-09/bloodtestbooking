@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
     const cartItemsContainer = document.querySelector('.cart-items');
     const totalItemsElement = document.getElementById('total-items');
@@ -32,6 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
         // Update total items and total price
         totalItemsElement.textContent = `Total Items: ${cartItems.length}`;
         totalPriceElement.textContent = `Total Price: ₹${totalPrice}`;
+
+        // Store total price in localStorage
+        localStorage.setItem('totalPrice', totalPrice);
     };
 
     // Initial display update
@@ -57,7 +59,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Example: Function to add items to the cart
-    // Call this function wherever you handle adding items to the cart (like in test.js)
     const addToCart = (item) => {
         const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
         cartItems.push(item);
@@ -65,24 +66,30 @@ document.addEventListener('DOMContentLoaded', () => {
         updateCartDisplay(); // Update the display after adding
     };
 
-    // Expose the addToCart function for use in other scripts
     window.addToCart = addToCart;
-});
 
-document.getElementById("lab-test").addEventListener("click", function(){
+    // Check if cart is empty when clicking the checkout button
+    document.getElementById("payment").addEventListener("click", function() {
+        const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
 
-    window.location.href="/test/test.html";
-
+        if (cartItems.length === 0) {
+            // Cart is empty, show alert message
+            alert('Your cart is empty. Please add items before checking out.');
+        } else {
+            // Cart is not empty, proceed to the payment page
+            window.location.href = "/payment/payment.html";
+        }
+    });
 });
 
 document.getElementById("home").addEventListener("click", function(){
-
-    window.location.href="/home/home.html";
-
-});
+    window.location.href = "/home/home.html";
+})
 
 document.getElementById("about").addEventListener("click", function(){
+    window.location.href = "/about/about.html";
+})
 
-    window.location.href="/about/about.html";
-
+document.getElementById("lab-test").addEventListener("click", function(){
+    window.location.href = "/test/test.html";
 });

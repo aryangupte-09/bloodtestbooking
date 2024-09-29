@@ -1,0 +1,101 @@
+/* payment.css */
+
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  h1 {
+    justify-content: center;
+    text-align: center;
+    margin-top: 10vh;
+    font-size: 24px;
+    font-weight: bold;
+    color: #337ab7;
+  }
+  
+  /* Form Styles */
+  
+  #payment-form {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  select {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  input[type="text"]:focus,
+  select:focus {
+    border-color: #337ab7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #card-payment-fields,
+  #upi-payment-fields {
+    margin-top: 20px;
+  }
+  
+  #card-payment-fields label,
+  #upi-payment-fields label {
+    margin-bottom: 10px;
+  }
+  
+  #card-payment-fields input[type="text"],
+  #upi-payment-fields input[type="text"] {
+    margin-bottom: 20px;
+  }
+  
+  #upi-qr-code {
+    width: auto;
+    height: 150px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+  }
+  
+  #error-message {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #337ab7;
+    color: #fff;
+    cursor: pointer;
+}
+  
+  button[type="submit"]:hover {
+    background-color: #23527c;
+}
