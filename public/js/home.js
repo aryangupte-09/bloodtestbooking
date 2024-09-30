@@ -41,3 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+
+document.getElementById("more-contact").addEventListener("click", function(){
+    window.location.href = "/contact/contact.html";
+})
