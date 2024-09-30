@@ -4,7 +4,6 @@ const bodyParser = require('body-parser');
 const bcrypt = require('bcryptjs');
 const path = require('path');
 const app = express();
-const emailSender = require('./emailSender');
 
 // Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
